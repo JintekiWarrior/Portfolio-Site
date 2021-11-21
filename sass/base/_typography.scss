@@ -1,0 +1,28 @@
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px;  */
+  line-height: 1.7;
+  color: $color-black;
+}
+
+.header-text {
+  width: 100%;
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  font-weight: 100;
+  text-align: center;
+  text-shadow: 2px 2px rgba($color-black, .2);
+
+  & > span {
+    display: block;
+  }
+
+  &--main {
+    color: #2A9D8F;
+  }
+
+  &--sub {
+    color: $color-black;
+  }
+}
