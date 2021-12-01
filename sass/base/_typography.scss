@@ -8,14 +8,16 @@ body {
 
 .header-text {
   width: 100%;
-  font-size: 6rem;
-  letter-spacing: 1rem;
+  font-size: 5.5rem;
+  letter-spacing: .8rem;
   font-weight: 100;
+  text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px rgba($color-black, .2);
 
   & > span {
     display: block;
+    animation: zoomInText 1s ease-out;
   }
 
   &--main {
@@ -25,4 +27,14 @@ body {
   &--sub {
     color: $color-black;
   }
+}
+
+.story__heading {
+  font-size: 4.5rem;
+  letter-spacing: .6rem;
+  font-weight: 200;
+}
+
+.story__content {
+  font-size: 2rem;
 }

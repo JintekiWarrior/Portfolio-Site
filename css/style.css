@@ -1,3 +1,13 @@
+@keyframes zoomInText {
+  0% {
+    opacity: 0;
+    transform: scale(0.1); }
+  80% {
+    transform: scale(1.2); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 *,
 *::after,
 *::before {
@@ -11,7 +21,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-color: #FCF8ED; }
+  background-color: #FDF6ED; }
 
 body {
   font-family: "lato", sans-serif;
@@ -22,17 +32,53 @@ body {
 
 .header-text {
   width: 100%;
-  font-size: 6rem;
-  letter-spacing: 1rem;
+  font-size: 5.5rem;
+  letter-spacing: .8rem;
   font-weight: 100;
+  text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px rgba(14, 23, 27, 0.2); }
   .header-text > span {
-    display: block; }
+    display: block;
+    animation: zoomInText 1s ease-out; }
   .header-text--main {
     color: #2A9D8F; }
   .header-text--sub {
     color: #0E171B; }
+
+.story__heading {
+  font-size: 4.5rem;
+  letter-spacing: .6rem;
+  font-weight: 200; }
+
+.story__content {
+  font-size: 2rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
 .header {
   width: 100%;
@@ -44,3 +90,14 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.story {
+  text-align: center; }
+  .story__heading {
+    margin-bottom: 10rem; }
+  .story__pic {
+    max-height: 80%;
+    border-radius: 8px; }
+
+.story > .row > .col-1-of-2 {
+  height: 50rem; }

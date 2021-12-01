@@ -1,6 +1,12 @@
+@import "abstracts/animations";
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
 
+@import "layout/grid";
 @import "layout/header";
+@import "layout/story";
+
+@import "pages/home";

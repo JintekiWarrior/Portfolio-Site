@@ -1,0 +1,21 @@
+.story {
+    text-align: center;
+
+    &__heading {
+        margin-bottom: 10rem;
+    }
+
+    &__pic {
+        max-height: 80%;
+        border-radius: 8px;
+    }
+
+    &__content {
+
+    }
+
+}
+
+.story > .row > .col-1-of-2 {
+    height: 50rem;
+}
