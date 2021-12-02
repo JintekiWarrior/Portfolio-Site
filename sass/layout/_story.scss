@@ -1,21 +1,29 @@
 .story {
-    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & > .row {
+
+        & > .col-1-of-2 {
+            height: 50rem;
+        }
+    }
 
     &__heading {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
+        text-align: center;
     }
 
     &__pic {
-        max-height: 80%;
+        max-height: 100%;
+        max-width: 100%;
         border-radius: 8px;
     }
 
     &__content {
-
+        padding-left: 6rem;
     }
 
-}
-
-.story > .row > .col-1-of-2 {
-    height: 50rem;
 }
