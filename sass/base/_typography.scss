@@ -29,11 +29,13 @@ body {
   }
 }
 
-.story__heading {
+.heading-secondary {
   font-size: 4.5rem;
   letter-spacing: .6rem;
   font-weight: 200;
   color: $color-primary;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .story__content {

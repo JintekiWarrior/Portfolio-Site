@@ -46,11 +46,13 @@ body {
   .header-text--sub {
     color: #0E171B; }
 
-.story__heading {
+.heading-secondary {
   font-size: 4.5rem;
   letter-spacing: .6rem;
   font-weight: 200;
-  color: #2A9D8F; }
+  color: #2A9D8F;
+  text-align: center;
+  margin-bottom: 5rem; }
 
 .story__content {
   font-size: 1.8rem; }
@@ -99,9 +101,6 @@ body {
   justify-content: center; }
   .story > .row > .col-1-of-2 {
     height: 50rem; }
-  .story__heading {
-    margin-bottom: 5rem;
-    text-align: center; }
   .story__pic {
     max-height: 100%;
     max-width: 100%;
