@@ -1,0 +1,30 @@
+.projects {
+    
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        // flex-wrap: wrap;
+
+        &-col-1-of-3 {
+            background-color: $color-primary;
+            padding: 3rem 3.5rem;
+            border-radius: 8px;
+            height: 80rem;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__pic-container {
+        border-radius: 8px;
+        overflow: hidden;
+        height: 28%;
+    }
+    &__image {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
