@@ -17,11 +17,23 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem;
   background-color: #fff; }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 3rem 0; } }
 
 body {
   font-family: "lato", sans-serif;
@@ -72,6 +84,9 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
   .row::after {
     content: "";
     display: table;
@@ -80,6 +95,10 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -148,11 +167,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .story > .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
   .story > .row > .col-1-of-2 {
     height: 50rem; }
+    @media only screen and (max-width: 75em) {
+      .story > .row > .col-1-of-2 {
+        height: 40rem;
+        margin: 0;
+        padding: 2rem; } }
+  @media only screen and (max-width: 75em) {
+    .story > .row > :last-child {
+      width: 70%; } }
   .story__pic {
     max-height: 100%;
     max-width: 100%;
     border-radius: 8px; }
   .story__content {
     padding-left: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .story__content {
+        padding-left: 0;
+        text-align: center; } }
