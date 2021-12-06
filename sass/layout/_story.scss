@@ -1,5 +1,9 @@
 .story {
-    height: 60vh;
+    background-color: $color-eggshell;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px $color-grey;
+    margin-bottom: 8rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
