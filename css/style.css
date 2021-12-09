@@ -126,7 +126,18 @@ body {
 .navbar__container {
   height: 5rem;
   background-color: #2A9D8F;
-  border-radius: 8px; }
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navbar__heading {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .5rem;
+  color: #fff;
+  margin-left: 3rem;
+  padding: 1rem; }
 
 .navbar__item-list {
   height: 100%;
@@ -140,7 +151,9 @@ body {
   list-style-type: none;
   margin-right: 3rem;
   height: 100%;
-  vertical-align: center; }
+  padding: 1rem;
+  display: flex;
+  align-items: center; }
 
 .navbar__item:hover {
   cursor: pointer;
