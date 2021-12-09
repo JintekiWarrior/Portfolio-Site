@@ -8,6 +8,10 @@
         justify-content: space-around;
         // flex-wrap: wrap;
 
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+
         &-col-1-of-3 {
             background-image: linear-gradient(122.25deg, $color-eggshell, $color-primary 50%);
             padding: 5rem 3.5rem;
@@ -15,6 +19,14 @@
             height: 60rem;
             box-shadow: 5px 5px 1.2rem $color-grey;
             border-radius: 6px;
+
+            @include respond(tab-port) {
+                margin-bottom: 3rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 
@@ -28,6 +40,11 @@
         overflow: hidden;
         height: 28%;
         margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+            height: 30rem;
+        }
     }
 
     &__image {
@@ -40,6 +57,11 @@
         background-color: $color-eggshell;
         text-align: center;
         border-radius: 10rem;
+
+        @include respond(tab-port) {
+            height: auto;
+            width: 40rem;
+        }
     }
 
     &__link {
