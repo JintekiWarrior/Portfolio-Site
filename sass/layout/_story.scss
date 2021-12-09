@@ -8,10 +8,6 @@
     flex-direction: column;
     justify-content: center;
 
-    // @include respond(tab-land) {
-    //     padding: 1rem;
-    // }
-
     & > .row {
         @include respond(tab-land) {
             display: flex;
