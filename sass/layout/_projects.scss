@@ -1,7 +1,7 @@
 .projects {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 20rem;
+    margin-bottom: 4rem;
     
     &__row {
         display: flex;
@@ -39,7 +39,7 @@
         border-radius: 8px;
         overflow: hidden;
         height: 28%;
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
 
         @include respond(tab-port) {
             margin-bottom: 2rem;
@@ -66,7 +66,7 @@
 
     &__link {
         color: $color-primary;
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-decoration: none;
         text-transform: uppercase;
     }
