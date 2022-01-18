@@ -24,10 +24,13 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
   background-color: $color-white;
 
   @include respond(tab-land) {
     padding: 3rem 0;
   }
+}
+
+.main-body {
+  padding: 3rem;
 }
