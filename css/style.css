@@ -78,8 +78,20 @@ body {
   font-size: 1.6rem; }
 
 .footer {
-  height: 40vh;
   background-color: #999b9b46; }
+  .footer__links-container {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center; }
+  .footer__link-item {
+    list-style-type: none;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 2rem; }
+  .footer__link {
+    color: #0E171B;
+    text-decoration: none; }
 
 .row {
   max-width: 114rem;
@@ -128,7 +140,6 @@ body {
 .navbar__container {
   height: 5rem;
   background-color: #2A9D8F;
-  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
