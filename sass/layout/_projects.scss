@@ -6,19 +6,21 @@
     &__row {
         display: flex;
         justify-content: space-around;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
 
         @include respond(tab-port) {
             flex-direction: column;
         }
 
         &-col-1-of-3 {
-            background-image: linear-gradient(122.25deg, $color-eggshell, $color-primary 50%);
-            padding: 5rem 3.5rem;
-            // border-radius: 3px;
-            height: 60rem;
+            // background-image: linear-gradient(122.25deg, $color-eggshell, $color-primary 50%);
+            background-color: $color-primary;
+            padding: 1rem;
             box-shadow: 5px 5px 1.2rem $color-grey;
             border-radius: 6px;
+            width: 45%;
+            margin: 2rem;
+
 
             @include respond(tab-port) {
                 margin-bottom: 3rem;
@@ -35,21 +37,8 @@
         margin-bottom: 2rem;
     }
 
-    &__pic-container {
-        border-radius: 8px;
-        overflow: hidden;
-        height: 28%;
-        margin-bottom: 3rem;
-
-        @include respond(tab-port) {
-            margin-bottom: 2rem;
-            height: 30rem;
-        }
-    }
-
     &__image {
-        max-height: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 
     &__link-container {
