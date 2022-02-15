@@ -26,11 +26,8 @@ body {
   box-sizing: border-box;
   background-color: $color-white;
 
-  @include respond(tab-land) {
-    padding: 3rem 0;
-  }
 }
 
 .main-body {
-  padding: 3rem 12rem;
+  padding: 3rem 20rem;
 }
