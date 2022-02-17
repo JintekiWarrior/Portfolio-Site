@@ -44,7 +44,7 @@ body {
   color: #0E171B; }
 
 p {
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
 
 .header-text {
   width: 100%;
@@ -223,21 +223,19 @@ p {
     text-decoration: none;
     text-transform: uppercase; }
 
-.story {
+.story > .row {
   background-color: #FDF6ED;
   border-radius: 8px;
   box-shadow: 3px 3px 10px #999b9b46;
-  padding: 4rem 0;
+  padding: 4rem;
   margin: 0 auto;
   margin-bottom: 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  display: flex; }
   .story > .row > .col-1-of-2 {
-    height: 30rem; }
-  .story__pic {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 8px; }
-  .story__content {
-    padding-left: 6rem; }
+    width: 50%; }
+
+.story__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px; }
