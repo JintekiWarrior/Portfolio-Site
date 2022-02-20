@@ -1,12 +1,16 @@
 .navbar {
     
     &__container {
-        height: 5rem;
         background-color: $color-primary;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include respond(phone) {
+            padding: 2rem;
+            flex-direction: column;
+        }
     }
 
     &__heading {
@@ -16,6 +20,10 @@
         color: #fff;
         margin-left: 3rem;
         padding: 1rem;
+
+        @include respond(phone) {
+            margin: 0;
+        }
     }
 
     &__item-list {
@@ -26,6 +34,10 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -34,8 +46,9 @@
         height: 100%;
         padding: 1rem;
 
-        display: flex;
-        align-items: center;
+        @include respond(phone) {
+            margin: 0;
+        }
     }
 
     &__item:hover {
