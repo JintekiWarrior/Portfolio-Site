@@ -6,6 +6,10 @@
         width: 50%;
         display: flex;
         justify-content: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__link-item {
@@ -13,6 +17,12 @@
         margin: 2rem;
         padding: 2rem;
         font-size: 2rem;
+
+        @include respond(phone) {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
     }
 
     &__link {

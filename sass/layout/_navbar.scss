@@ -46,6 +46,10 @@
         height: 100%;
         padding: 1rem;
 
+        @include respond(tab-port) {
+            margin-right: 0;
+        }
+
         @include respond(phone) {
             margin: 0;
         }
