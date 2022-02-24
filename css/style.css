@@ -256,3 +256,6 @@ p {
   .story__content.text-container {
     width: 100%;
     padding: 1rem; } }
+
+.story__content-text {
+  margin-bottom: 2rem; }
