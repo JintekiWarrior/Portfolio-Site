@@ -1,11 +1,11 @@
 .story {
-
+    margin-bottom: 8rem;
+    
     &__content-container {
         background-color: $color-eggshell;
         border-radius: 8px;
         box-shadow: 3px 3px 10px $color-grey;
         margin: 0 auto;
-        margin-bottom: 8rem;
         display: flex;
 
         @include respond(tab-port) {
