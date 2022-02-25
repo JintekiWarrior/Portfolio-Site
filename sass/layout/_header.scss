@@ -3,6 +3,10 @@
   height: 80vh;
   position: relative;
 
+  @include respond(phone) {
+    height: 50vh;
+  }
+
   &__text-container {
     width: 100%;
     position: absolute;
