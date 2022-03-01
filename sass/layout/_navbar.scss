@@ -59,4 +59,9 @@
         cursor: pointer;
         background-color: $color-primary-dark;
     }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
 }

@@ -16,7 +16,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -187,6 +188,10 @@ p {
 .navbar__item:hover {
   cursor: pointer;
   background-color: #1E7167; }
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff; }
 
 .projects {
   margin: 0 auto;

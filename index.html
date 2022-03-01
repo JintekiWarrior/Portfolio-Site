@@ -12,10 +12,10 @@
     <div class="navbar__container">
       <h3 class="navbar__heading">Portfolio</h3>
       <ul class="navbar__item-list">
-        <li class="navbar__item">Story</li>
-        <li class="navbar__item">Projects</li>
-        <li class="navbar__item">Resume</li>
-        <li class="navbar__item">Contact Info </li>  
+        <li class="navbar__item"><a href="#story-link-selector" class="navbar__link">Story</a></li>
+        <li class="navbar__item"><a href="#projects-link-selector" class="navbar__link">Projects</a></li>
+        <li class="navbar__item"><a href="#resume-link-selector" class="navbar__link">Resume</a></li>
+        <li class="navbar__item"><a href="" class="navbar__link">Contact Info</a></li>  
       </ul>
     </div>
   </section>
@@ -30,7 +30,7 @@
   </header>
 
   <main class="main-body">
-    <section class="story">
+    <section class="story" id="story-link-selector">
       <h2 class="heading-secondary">My Story</h2>
       <div class="story__content-container">
         <div class="story__content pic">
@@ -53,12 +53,12 @@
       </div>
     </section>
     
-    <section class="tech">
+    <section class="tech" id="resume-link-selector">
       <h2 class="heading-secondary">Technologies</h2>
       <img src="./img/technologies.svg" alt="Picture with all tech listed in a circle">
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects-link-selector">
       <h2 class="heading-secondary">My Projects</h2>
       <div class="projects__container">
         <div class="projects__individual-container">
@@ -105,9 +105,15 @@
   </main>
   <footer class="footer">
       <ul class="footer__links-container">
-        <li class="footer__link-item"><a href="#" class="footer__link">Github</a></li>
-        <li class="footer__link-item"><a href="#" class="footer__link">Linkedin</a></li>
-        <li class="footer__link-item"><a href="#" class="footer__link">Email</a></li>
+        <li class="footer__link-item">
+          <a href="https://github.com/JintekiWarrior" class="footer__link">Github</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="https://www.linkedin.com/in/moe-yassine" class="footer__link">Linkedin</a>
+        </li>
+        <li class="footer__link-item">
+          <a href="#" class="footer__link">Email</a>
+        </li>
       </ul>
   </footer>
 </body>
