@@ -164,10 +164,12 @@ p {
 
 .navbar__item-list {
   height: 100%;
+  width: 540px;
   font-size: 1.8rem;
   color: #fff;
+  margin-right: 3rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .navbar__item-list {
@@ -175,7 +177,6 @@ p {
 
 .navbar__item {
   list-style-type: none;
-  margin-right: 3rem;
   height: 100%;
   padding: 1rem; }
   @media only screen and (max-width: 57.5em) {
@@ -187,7 +188,12 @@ p {
 
 .navbar__item:hover {
   cursor: pointer;
-  background-color: #1E7167; }
+  font-size: 25px;
+  padding: 0; }
+
+.navbar__item:active {
+  font-size: 20px;
+  padding: 0; }
 
 .navbar__link {
   text-decoration: none;
@@ -287,6 +293,5 @@ p {
   justify-content: center;
   align-content: center;
   margin-bottom: 8rem; }
-
-.img {
-  display: inline; }
+  .tech__img {
+    max-height: 50rem; }
