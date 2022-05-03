@@ -1,134 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="css/style.css">
-  <title>Portfolio | Moe Yassine</title>
-</head>
-<body>
-  <section class="navbar">
-    <div class="navbar__container">
-      <h3 class="navbar__heading">Portfolio</h3>
-      <ul class="navbar__item-list">
-        <li class="navbar__item"><a href="#story-link-selector" class="navbar__link">Story</a></li>
-        <li class="navbar__item"><a href="#projects-link-selector" class="navbar__link">Projects</a></li>
-        <li class="navbar__item"><a href="#resume-link-selector" class="navbar__link">Resume</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Contact Info</a></li>  
-      </ul>
-    </div>
-  </section>
-
-  <header class="header">
-    <div class="header__text-container">
-      <h1 class="header-text">
-        <span class="header-text--main">Hi I'm Moe,</span>
-        <span class="header-text--sub">Welcome to my web development portfolio</span>
-      </h1>
-    </div>
-  </header>
-
-  <main class="main-body">
-    <section class="story" id="story-link-selector">
-      <h2 class="heading-secondary">My Story</h2>
-      <div class="story__content-container">
-        <div class="story__content pic">
-          <img src="img/my-picture.jpg" alt="picture of me" class="story__pic">
-        </div>
-        <div class="story__content text-container">
-          <p class="story__content-text">
-            I've dony many different jobs, in many different fields. Worked at many different companies, and met many different people. 
-            However I can confidently say I have never felt as happy working, as I do while programming. My goal is to become 
-            the best developer I can possibly be. Learning and mastering the art of writing good code, and developing the skills to 
-            squash any bug, I will strive for perfection in any project I tackle.
-          </p>
-          <p class="story__content-text"> 
-            At the moment I am working a a teaching assistant at a bootcamp associated with Michigan State University. I help 
-            students work through bugs on there projects, review there code, and most importantly help them build the 
-            skills to become a great programmer. If you have a question for me, know a good role, or just want to say hi you will 
-            find my contact info below.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <section class="tech" id="resume-link-selector">
-      <h2 class="heading-secondary">Technologies</h2>
-      <img class="tech__img" src="./img/technologies.svg" alt="Picture with all tech listed in a circle">
-      <div class="tech__list-container">
-        <h3 class="heading-tertiary">Tools and Technologies</h3>
-        <ul class="tech__list">
-          <li>Javascript | React</li>
-          <li>Node | Express</li>
-          <li>HTML</li>
-          <li>CSS | Bootstrap</li>
-          <li>Python | Django</li>
-          <li>Git | Github | Gitlab</li>
-          <li>NoSQL | MongoDB | Mongoose</li>
-          <li>SQL | MySQL | PostgreSQL</li>
-          <li>Vscode | Atom</li>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio | Moe Yassine</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="navbar__container">
+        <h3 class="navbar__heading">Portfolio</h3>
+        <ul class="navbar__item-list">
+          <li class="navbar__item">
+            <a href="#story-link-selector" class="navbar__link">Story</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects-link-selector" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#resume-link-selector" class="navbar__link">Resume</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link">Contact Info</a>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="projects" id="projects-link-selector">
-      <h2 class="heading-secondary">My Projects</h2>
-      <div class="projects__container">
-        <div class="projects__individual-container">
-          <div class="projects__image-container">
-            <img src="img/beats-by-dwight.PNG" alt="Project 1" class="projects__image">
-          </div>
-          <div class="projects__content-container">
-            <h3 class="projects__header heading-tertiary">Beets by Dwight</h3>
-            <p class="projects__technology-text">react.js | node.js</p>
-            <p class="projects__summary-text">An ecommerce site where users can shop for produce. As an integrated member of a 4-person team, I made sure the API was structured correctly, solved front-end CRUD issues, and implemented the Stripe checkout API.</p>
-            <div class="projects__link-container">
-              <a href="https://boo-leans.github.io/eCommerce-client/" class="projects__link">Got to</a>
-            </div>
-          </div>
-        </div>
-        <div class="projects__individual-container">
-          <div class="projects__image-container">
-            <img src="img/story-time.PNG" alt="Project 2" class="projects__image">
-          </div>
-          <div class="projects__content-container">
-            <h3 class="projects__header heading-tertiary">Story Time</h3>
-            <p class="projects__technology-text">react.js | node.js</p>
-            <p class="projects__summary-text">An app that allows users to write their own stories and chapters to share with others. Last project I did for my bootcamp and I enjoyed it. I added a way to sort the stories, and every story can have multiple chapters.</p>
-            <div class="projects__link-container">
-              <a href="https://jintekiwarrior.github.io/Story_Time_Frontend/" class="projects__link">Go to</a>
-            </div>  
-          </div>
-        </div>
-        <div class="projects__individual-container">
-          <div class="projects__image-container">
-            <img src="img/quiz-crafter.PNG" alt="Project 3" class="projects__image">
-          </div>
-          <div class="projects__content-container">
-            <h3 class="projects__header heading-tertiary">Quiz Crafter</h3>
-            <p class="projects__technology-text">Jquery | node.js</p>
-            <p class="projects__summary-text">The first real web page I worked made from scratch. Putting both a frontend and backend together in 4 days was quite a challenge back then. I know it's not the prettiest but I was proud when I finished.</p>
-            <div class="projects__link-container">
-              <a href="https://jintekiwarrior.github.io/createQuiz-client/" class="projects__link">Go to</a>
-            </div>
-          </div>
-        </div>
+    <header class="header">
+      <div class="header__text-container">
+        <h1 class="header-text">
+          <span class="header-text--main">Hi I'm Moe,</span>
+          <span class="header-text--sub"
+            >Welcome to my web development portfolio</span
+          >
+        </h1>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
+    </header>
+
+    <main class="main-body">
+      <section class="story" id="story-link-selector">
+        <h2 class="heading-secondary">My Story</h2>
+        <div class="story__content-container">
+          <div class="story__content pic">
+            <img
+              src="img/my-picture.jpg"
+              alt="picture of me"
+              class="story__pic"
+            />
+          </div>
+          <div class="story__content text-container">
+            <p class="story__content-text">
+              I've dony many different jobs, in many different fields. Worked at
+              many different companies, and met many different people. However I
+              can confidently say I have never felt as happy working, as I do
+              while programming. My goal is to become the best developer I can
+              possibly be. Learning and mastering the art of writing good code,
+              and developing the skills to squash any bug, I will strive for
+              perfection in any project I tackle.
+            </p>
+            <p class="story__content-text">
+              At the moment I am working a a teaching assistant at a bootcamp
+              associated with Michigan State University. I help students work
+              through bugs on there projects, review there code, and most
+              importantly help them build the skills to become a great
+              programmer. If you have a question for me, know a good role, or
+              just want to say hi you will find my contact info below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech" id="resume-link-selector">
+        <h2 class="heading-secondary">Technologies</h2>
+        <img
+          class="tech__img"
+          src="./img/technologies.svg"
+          alt="Picture with all tech listed in a circle"
+        />
+        <div class="tech__list-container">
+          <h3 class="heading-tertiary">Tools and Technologies</h3>
+          <ul class="tech__list">
+            <li>Javascript | React</li>
+            <li>Node | Express</li>
+            <li>HTML</li>
+            <li>CSS | Bootstrap</li>
+            <li>Python | Django</li>
+            <li>Git | Github | Gitlab</li>
+            <li>NoSQL | MongoDB | Mongoose</li>
+            <li>SQL | MySQL | PostgreSQL</li>
+            <li>Vscode | Atom</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects" id="projects-link-selector">
+        <h2 class="heading-secondary">My Projects</h2>
+        <div class="projects__container">
+          <div class="projects__individual-container" id="projects__1">
+            <div class="projects__image-container">
+              <img
+                src="img/beats-by-dwight.PNG"
+                alt="Project 1"
+                class="projects__image"
+              />
+            </div>
+            <div class="projects__content-container">
+              <h3 class="projects__header heading-tertiary">Beets by Dwight</h3>
+              <p class="projects__technology-text">react.js | node.js</p>
+              <p class="projects__summary-text">
+                An ecommerce site where users can shop for produce. As an
+                integrated member of a 4-person team, I made sure the API was
+                structured correctly, solved front-end CRUD issues, and
+                implemented the Stripe checkout API.
+              </p>
+              <div class="projects__link-container">
+                <a
+                  href="https://boo-leans.github.io/eCommerce-client/"
+                  class="projects__link"
+                  >Got to</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projects__individual-container" id="projects__2">
+            <div class="projects__image-container">
+              <img
+                src="img/story-time.PNG"
+                alt="Project 2"
+                class="projects__image"
+              />
+            </div>
+            <div class="projects__content-container">
+              <h3 class="projects__header heading-tertiary">Story Time</h3>
+              <p class="projects__technology-text">react.js | node.js</p>
+              <p class="projects__summary-text">
+                An app that allows users to write their own stories and chapters
+                to share with others. Last project I did for my bootcamp and I
+                enjoyed it. I added a way to sort the stories, and every story
+                can have multiple chapters.
+              </p>
+              <div class="projects__link-container">
+                <a
+                  href="https://jintekiwarrior.github.io/Story_Time_Frontend/"
+                  class="projects__link"
+                  >Go to</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projects__individual-container" id="projects__3">
+            <div class="projects__image-container">
+              <img
+                src="img/quiz-crafter.png"
+                alt="Project 3"
+                class="projects__image"
+              />
+            </div>
+            <div class="projects__content-container">
+              <h3 class="projects__header heading-tertiary">Quiz Crafter</h3>
+              <p class="projects__technology-text">React.js | node.js</p>
+              <p class="projects__summary-text">
+                A website for teachers who want to create quizzes for their
+                students. This is an update to an earlier project I did where I
+                made a website using jquery. I recreated it with react and added
+                some new features. The backend is still the same using mongoose,
+                and express.
+              </p>
+              <div class="projects__link-container">
+                <a
+                  href="https://jintekiwarrior.github.io/createQuiz-client/"
+                  class="projects__link"
+                  >Go to</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <ul class="footer__links-container">
         <li class="footer__link-item">
-          <a href="https://github.com/JintekiWarrior" class="footer__link">Github</a>
+          <a href="https://github.com/JintekiWarrior" class="footer__link"
+            >Github</a
+          >
         </li>
         <li class="footer__link-item">
-          <a href="https://www.linkedin.com/in/moe-yassine" class="footer__link">Linkedin</a>
+          <a href="https://www.linkedin.com/in/moe-yassine" class="footer__link"
+            >Linkedin</a
+          >
         </li>
         <li class="footer__link-item">
           <a href="#" class="footer__link">Email</a>
         </li>
       </ul>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

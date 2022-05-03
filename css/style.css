@@ -255,6 +255,15 @@ p {
     text-decoration: none;
     text-transform: uppercase; }
 
+#projects__1 {
+  order: 2; }
+
+#projects__2 {
+  order: 3; }
+
+#projects__3 {
+  order: 1; }
+
 .story {
   margin-bottom: 8rem; }
   .story__content-container {

@@ -1,78 +1,90 @@
 .projects {
-    margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__individual-container {
+    box-shadow: 5px 5px 1.2rem $color-grey;
+    margin-bottom: 8rem;
+    border-radius: 8px;
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    
-    &__container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+
+    @include respond(tab-port) {
+      width: 100%;
     }
+  }
 
-    &__individual-container {
-        box-shadow: 5px 5px 1.2rem $color-grey;
-        margin-bottom: 8rem;
-        border-radius: 8px;
-        display: flex;
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-        @include respond(tab-port) {
-            flex-direction: column;
-            align-items: center;
-        }
+  &__image-container {
+    width: 50%;
+
+    @include respond(tab-port) {
+      width: 100%;
     }
+  }
 
-    &__content-container {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
 
-        @include respond(tab-port) {
-            width: 100%;
-        }
+    @include respond(tab-port) {
+      border-radius: 8px 8px 0 0;
     }
+  }
 
-    &__header {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+  &__summary-text {
+    margin-bottom: 2rem;
+  }
 
-    &__image-container {
-        width: 50%;
+  &__link-container {
+    padding: 1rem;
+    background-color: $color-eggshell;
+    text-align: center;
+    border-radius: 10rem;
+    width: 20rem;
+  }
 
-        @include respond(tab-port) {
-            width: 100%;
-        }
-    }
+  &__link {
+    color: $color-primary;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
 
-    &__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 8px 0 0 8px;
+#projects__1 {
+  order: 2;
+}
 
-        @include respond(tab-port) {
-            border-radius: 8px 8px 0 0;
-        }
-    }
+#projects__2 {
+  order: 3;
+}
 
-    &__summary-text {
-        margin-bottom: 2rem;
-    }
-
-    &__link-container {
-        padding: 1rem;
-        background-color: $color-eggshell;
-        text-align: center;
-        border-radius: 10rem;
-        width: 20rem;
-    }
-
-    &__link {
-        color: $color-primary;
-        font-size: 1.6rem;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+#projects__3 {
+  order: 1;
 }
