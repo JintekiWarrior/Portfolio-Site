@@ -1,11 +1,26 @@
 .tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 8rem;
+
+  &__img {
+    max-height: 30rem;
+    margin-bottom: 3rem;
+  }
+
+  &__list-container {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 8rem;
+    align-items: center;
+  }
 
-    &__img {
-        max-height: 50rem;
-    }
+  &__list {
+    list-style-type: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+  }
 }

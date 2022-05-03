@@ -46,8 +46,8 @@ p {
 
 .header-text {
   max-width: 80%;
-  font-size: 6rem;
-  letter-spacing: .8rem;
+  font-size: 5rem;
+  letter-spacing: 0.8rem;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
@@ -68,12 +68,12 @@ p {
       font-size: 2.5rem;
       max-width: 100%;
       font-weight: 400;
-      letter-spacing: .4rem;
+      letter-spacing: 0.4rem;
       text-shadow: 1px 1px rgba(14, 23, 27, 0.2); } }
 
 .heading-secondary {
   font-size: 4rem;
-  letter-spacing: .6rem;
+  letter-spacing: 0.6rem;
   font-weight: 200;
   color: #2A9D8F;
   text-align: center;
@@ -85,12 +85,12 @@ p {
     .heading-secondary {
       font-size: 2.2rem;
       font-weight: 400;
-      letter-spacing: .3rem; } }
+      letter-spacing: 0.3rem; } }
 
 .heading-tertiary {
   font-size: 2.5rem;
   font-weight: 200;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
   color: #2A9D8F; }
 
 .story__content {
@@ -303,4 +303,15 @@ p {
   align-content: center;
   margin-bottom: 8rem; }
   .tech__img {
-    max-height: 50rem; }
+    max-height: 30rem;
+    margin-bottom: 3rem; }
+  .tech__list-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .tech__list {
+    list-style-type: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+    text-align: center; }
